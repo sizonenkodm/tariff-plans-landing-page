@@ -86,8 +86,6 @@ body {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
 }
 .header__button:hover {
@@ -134,8 +132,6 @@ body {
   display: flex;
   text-align: center;
   letter-spacing: 0.833333px;
-  -moz-border-radius: 22px;
-  -webkit-border-radius: 22px;
   border-radius: 22px;
 }
 .content__button {
@@ -148,14 +144,10 @@ body {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.833333px;
-  -moz-border-radius: 22px;
-  -webkit-border-radius: 22px;
   border-radius: 22px;
 }
 .content__button-active {
   background: #bb6bd9;
-  -moz-box-shadow: 0px 6px 12px rgba(82, 67, 194, 0.16);
-  -webkit-box-shadow: 0px 6px 12px rgba(82, 67, 194, 0.16);
   box-shadow: 0px 6px 12px rgba(82, 67, 194, 0.16);
   color: #fff;
   cursor: pointer;
@@ -169,8 +161,6 @@ body {
   height: 467px;
   margin: 90px 229px 0 200px;
   background: rgba(255, 255, 255, 0.64);
-  -moz-border-radius: 26px;
-  -webkit-border-radius: 26px;
   border-radius: 26px;
   display: flex;
   position: relative;
@@ -237,8 +227,6 @@ body {
   background: #231d4f;
   mix-blend-mode: normal;
   cursor: pointer;
-  -moz-border-radius: 24px;
-  -webkit-border-radius: 24px;
   border-radius: 24px;
   font-family: "Poppins Medium";
   font-weight: 500;
@@ -280,8 +268,6 @@ body {
   width: 292px;
   height: 473px;
   background: #231d4f;
-  -moz-box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
-  -webkit-box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
   box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
   border-radius: 26px;
   position: absolute;
@@ -306,8 +292,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  -moz-border-radius: 13.5px;
-  -webkit-border-radius: 13.5px;
   border-radius: 13.5px;
   font-family: "Poppins ExtraBold";
   font-weight: 800;
@@ -321,37 +305,31 @@ body {
 }
 
 .fadeIn {
-  -moz-animation: fadeIn 2000ms, ease-in;
   -webkit-animation: fadeIn 2000ms, ease-in;
   animation: fadeIn 2000ms, ease-in;
 }
 
 .fadeOut {
-  -moz-animation: fadeOut 2000ms, ease-in;
   -webkit-animation: fadeOut 2000ms, ease-in;
   animation: fadeOut 2000ms, ease-out;
 }
 
 .fadeInLeft {
-  -moz-animation: fadeInLeft 800ms, ease-in;
   -webkit-animation: fadeInLeft 800ms, ease-in;
   animation: fadeInLeft 800ms, ease-in;
 }
 
 .fadeOutRight {
-  -moz-animation: fadeOutRight 800ms, ease-in;
   -webkit-animation: fadeOutRight 800ms, ease-in;
   animation: fadeOutRight 800ms, ease-out;
 }
 
 .fadeInRight {
-  -moz-animation: fadeInRight 800ms, ease-in;
   -webkit-animation: fadeInRight 800ms, ease-in;
   animation: fadeInRight 800ms, ease-in;
 }
 
 .fadeOutLeft {
-  -moz-animation: fadeOutLeft 800ms, ease-in;
   -webkit-animation: fadeOutLeft 800ms, ease-in;
   animation: fadeOutLeft 800ms, ease-out;
 }
@@ -387,7 +365,8 @@ body {
   .cards__list {
     margin-left: 30px;
     grid-template-columns: 1fr 1fr 1.5fr;
-    column-gap: 15%;
+    -moz-column-gap: 15%;
+         column-gap: 15%;
   }
   .cards__item {
     margin-right: 0;
@@ -416,7 +395,8 @@ body {
     margin-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
-    column-gap: 7%;
+    -moz-column-gap: 7%;
+         column-gap: 7%;
   }
   .cards__item {
     margin-right: 0;
@@ -486,14 +466,6 @@ body {
     margin: 20px auto;
   }
 }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -510,14 +482,6 @@ body {
     opacity: 1;
   }
 }
-@-moz-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
@@ -532,16 +496,6 @@ body {
   }
   to {
     opacity: 0;
-  }
-}
-@-moz-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
   }
 }
 @-webkit-keyframes fadeInLeft {
@@ -564,15 +518,6 @@ body {
     transform: none;
   }
 }
-@-moz-keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-}
 @-webkit-keyframes fadeOutRight {
   from {
     opacity: 1;
@@ -589,16 +534,6 @@ body {
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
-  }
-}
-@-moz-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
   }
 }
 @-webkit-keyframes fadeInRight {
@@ -619,15 +554,6 @@ body {
   to {
     opacity: 1;
     transform: none;
-  }
-}
-@-moz-keyframes fadeOutLeft {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
   }
 }
 @-webkit-keyframes fadeOutLeft {

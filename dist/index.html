@@ -5,96 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Jadwalin</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__burger"></div>
-            <div class="header__title">
-                <div class="header__logo-big">
-                    <div class="header__logo-small"></div>
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__burger"></div>
+                <div class="header__title">
+                    <div class="header__logo"></div>
+                    <img src="assets/img/Jadwalin.svg" alt="Jadwalin" class="header__name">
                 </div>
-                <img src="assets/img/Jadwalin.svg" alt="Jadwalin" class="header__name">
+                <button class="header__button">Join Now</button>
             </div>
-            <button class="header__button">Join Now</button>
-        </div>
-    </header>
+        </header>
 
-    <section class="content">
-        <div class="content__container">
-            <h1 class="content__title">Plans & Pricing</h1>
-            <div class="content__down">
-                <div class="content__text">
-                    <p>Whether your time-saving automation needs are large or small, we’re here to help you scale.</p>
-                </div>
-                <div class="content__toggle">
-                    <button class="content__button content__button-monthly content__button-active">MONTHLY</button>
-                    <button class="content__button content__button-yearly">YEARLY</button>
+
+        <section class="content">
+            <div class="content__container">
+                <h1 class="content__title">Plans & Pricing</h1>
+                <div class="content__down">
+                    <div class="content__text">
+                        <p>Whether your time-saving automation needs are large or small, we’re here to help you scale.
+                        </p>
+                    </div>
+                    <div class="content__toggle">
+                        <button class="content__button content__button-monthly content__button-active">MONTHLY</button>
+                        <button class="content__button content__button-yearly">YEARLY</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cards">
-        <div class="cards__container">
-            <div class="cards__list">
-                <div class="cards__item">
-                    <div class="cards__item-price">
-                        <span class="subscription-cost monthly">$19</span>
-                        <span class="subscription-cost yearly">$12</span>
-                        <span class="subscription-duration">&nbsp;&nbsp;/month</span>
-                    </div>
-                    <h2 class="cards__item-name">Starter</h2>
-                    <p class="cards__item-description">Unleash the power of automation.</p>
-                    <ul class="cards__item-opportunities">
-                        <li><span>Multi-step Zaps</span></li>
-                        <li><span>3 Premium Apps</span></li>
-                        <li><span>2 Users team</span></li>
-                    </ul>
-                    <button class="cards__item-button">Choose plan</button>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__item-price">
-                        <span class="subscription-cost monthly">$54</span>
-                        <span class="subscription-cost yearly">$36</span>
-                        <span class="subscription-duration">&nbsp;&nbsp;/month</span>
-                    </div>
-                    <h2 class="cards__item-name">Professional</h2>
-                    <p class="cards__item-description">Advanced tools to take your work to the next level.</p>
-                    <ul class="cards__item-opportunities">
-                        <li><span>Multi-step Zaps</span></li>
-                        <li><span>Unlimited Premium Apps</span></li>
-                        <li><span>50 Users team</span></li>
-                        <li><span>Shared Workspace</span></li>
-                    </ul>
-                    <button class="cards__item-button">Choose plan</button>
-                </div>
-                <div class="popular">
-                    <div class="popular__label">MOST POPULAR</div>
-                    <div class="cards__item popular__card">
+        <section class="cards">
+            <div class="cards__container">
+                <div class="cards__list">
+                    <div class="cards__item">
                         <div class="cards__item-price">
-                            <span class="subscription-cost popular__text monthly">$89</span>
-                            <span class="subscription-cost popular__text yearly">$56</span>
-                            <span class="subscription-duration popular__text">&nbsp;&nbsp;/month</span>
+                            <span class="subscription-cost monthly">$19</span>
+                            <span class="subscription-cost yearly">$12</span>
+                            <span class="subscription-duration">&nbsp;&nbsp;/month</span>
                         </div>
-                        <h2 class="cards__item-name popular__text">Company</h2>
-                        <p class="cards__item-description popular__text">Automation plus enterprise-grade features.</p>
-                        <ul class="cards__item-opportunities popular__text popular__list">
-                            <li><span>Multi-step Zap</span></li>
-                            <li><span>Unlimited Premium Apps</span></li>
-                            <li><span>Unlimited Users Team</span></li>
-                            <li><span>Advanced Admin</span></li>
-                            <li><span>Custom Data Retention</span></li>
+                        <h2 class="cards__item-name">Starter</h2>
+                        <p class="cards__item-description">Unleash the power of automation.</p>
+                        <ul class="cards__item-opportunities">
+                            <li><span>Multi-step Zaps</span></li>
+                            <li><span>3 Premium Apps</span></li>
+                            <li><span>2 Users team</span></li>
                         </ul>
-                        <button class="cards__item-button popular__button">Choose plan</button>
+                        <button class="cards__item-button">Choose plan</button>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__item-price">
+                            <span class="subscription-cost monthly">$54</span>
+                            <span class="subscription-cost yearly">$36</span>
+                            <span class="subscription-duration">&nbsp;&nbsp;/month</span>
+                        </div>
+                        <h2 class="cards__item-name">Professional</h2>
+                        <p class="cards__item-description">Advanced tools to take your work to the next level.</p>
+                        <ul class="cards__item-opportunities">
+                            <li><span>Multi-step Zaps</span></li>
+                            <li><span>Unlimited Premium Apps</span></li>
+                            <li><span>50 Users team</span></li>
+                            <li><span>Shared Workspace</span></li>
+                        </ul>
+                        <button class="cards__item-button">Choose plan</button>
+                    </div>
+                    <div class="popular">
+                        <div class="popular__label">MOST POPULAR</div>
+                        <div class="cards__item popular__card">
+                            <div class="cards__item-price">
+                                <span class="subscription-cost popular__text monthly">$89</span>
+                                <span class="subscription-cost popular__text yearly">$56</span>
+                                <span class="subscription-duration popular__text">&nbsp;&nbsp;/month</span>
+                            </div>
+                            <h2 class="cards__item-name popular__text">Company</h2>
+                            <p class="cards__item-description popular__text">Automation plus enterprise-grade features.
+                            </p>
+                            <ul class="cards__item-opportunities popular__text popular__list">
+                                <li><span>Multi-step Zap</span></li>
+                                <li><span>Unlimited Premium Apps</span></li>
+                                <li><span>Unlimited Users Team</span></li>
+                                <li><span>Advanced Admin</span></li>
+                                <li><span>Custom Data Retention</span></li>
+                            </ul>
+                            <button class="cards__item-button popular__button">Choose plan</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

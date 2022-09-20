@@ -5,7 +5,6 @@ const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("autoprefixer");
-const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
 const dist = "./dist/";
@@ -52,7 +51,7 @@ gulp.task("build-js", () => {
 gulp.task("build-sass", () => {
   return gulp.src("./src/scss/style.scss")
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(dist))
+    .pipe(gulp.dest(dist + "/css"))
     .pipe(browsersync.stream());
 });
 
@@ -113,8 +112,7 @@ gulp.task("prod", () => {
   return gulp.src("./src/scss/style.scss")
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest(prod));
+    .pipe(gulp.dest(prod + "/css"));
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));
